@@ -1,0 +1,183 @@
+@import '../foundations/var.scss';
+
+.l-header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.l-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+
+  @include spl {
+    padding-top: 1.2rem;
+    padding-bottom: 1.3rem;
+    padding-left: 1.6rem;
+    padding-right: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    position: relative;
+  }
+}
+
+.l-header__title {
+  color: black;
+  margin-left: 3.7rem;
+  font: var(--font-inter);
+  font-weight: 40rem;
+  font-size: 2.2rem;
+  z-index: 9999;
+
+  @include spl {
+    margin-left: 0;
+  }
+
+  @include sp {
+    margin-left: 0;
+  }
+}
+
+.l-header__nav {
+  margin-left: auto;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+
+  @include spl {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease, visibility 0s 0.4s, opacity 0s 0.4s;
+  }
+}
+
+.l-header__nav__list {
+  display: flex;
+
+  @include spl {
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+}
+
+.l-header__nav__item {
+  font: var(--font-inter);
+  font-weight: 40rem;
+  font-size: 1.4rem;
+
+  &:not(:first-child) {
+    margin-left: 4.5rem;
+  }
+
+  &:last-child {
+    margin-right: 4.1rem;
+  }
+
+  @include spl {
+    font: var(--font-outfit);
+    font-size: 2.4rem;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.l-header__nav__link {
+  display: block;
+  height: 8rem;
+  line-height: 8rem;
+  margin: 0 auto;
+
+  @include spl {
+    color: #000;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.l-header__nav.active {
+  @include spl {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    transition: transform 0.4s ease;
+  }
+}
+
+.l-header__img {
+  padding-top: 8rem;
+  width: 100%;
+  display: block;
+  margin: 0;
+
+  /* ↑　widthが二つある
+          1280pxの方を削除
+          画面が小さくなった時にはみだすので 
+          containerの幅いっぱい100%にする*/
+  
+  @include spl {
+    padding: 0;
+  }
+
+  @include sp {
+    padding-top: 0;
+  }
+}
+
+/* ↓追記 */
+
+.l-header__img__item {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1280/629;
+  position: relative;
+
+  @include spl {
+    aspect-ratio: 393/629;
+  }
+
+  img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include spl {
+      text-align: center;
+      object-fit: cover;
+    }
+  }
+}
+
+    

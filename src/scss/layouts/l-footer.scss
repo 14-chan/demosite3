@@ -1,0 +1,93 @@
+@import '../foundations/var.scss';
+
+.l-footer {
+    margin-top: 14rem;
+    padding-bottom: 7.8rem;
+    position: relative;
+
+    @include spl {
+      margin-top: 9.3rem;
+      padding-bottom: 1.4rem;
+    }
+  
+    &::after {
+      content: '';
+      display: block;
+      background-color: #d9d9d9;
+      width: 100vw;
+      height: 100%;
+      margin-left: calc(((100vw - 100%) / 2) * -1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  
+  /* ↓ 左右の余白を他のセクションと合わせたいので
+  　　　背景だけを疑似要素で左右に広げる*/
+  
+  .l-footer__title {
+    display: block;
+    padding-top: 3.7rem;
+    font: var(--font-inter);
+    font-weight: 40rem;
+    font-size: 2.2rem;
+  }
+  
+  .l-footer__inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .l-footer__nav {
+    margin: 0 0 0 auto;
+
+    @include spl {
+      display: none;
+    }
+  }
+  
+  .l-footer__nav__list {
+    display: flex;
+    position: relative;
+    top: 1rem;
+    font: var(--font-inter);
+    font-weight: 40rem;
+    font-size: 1.4rem;
+
+  }
+  
+  .l-footer__nav__item {
+    &:not(first-child) {
+      margin-left: 4.1rem;
+    }
+  }
+  
+  .l-footer__nav__link {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .l-footer__info {
+    padding-top: 6.1rem;
+    display: block;
+  }
+
+  .l-footer__info__address {
+    padding-top: 1.1rem;
+
+  }
+  
+  .l-copyright {
+    margin: 0 auto;
+    text-align: right;
+    font: var(--font-inter);
+    font-weight: 40rem;
+    font-size: 1.2rem;
+
+    @include spl {
+      padding-top: 5.3rem;
+    }
+  }
+  

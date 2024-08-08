@@ -1,0 +1,108 @@
+@import '../foundations/var.scss';
+
+.l-about {
+  margin-top: 5.5rem;
+
+  @include sp {
+    margin-top: 6.8rem;
+  }
+}
+
+.l-about__title {
+  text-align: center;
+  font: var(--font-outfit);
+  font-weight: 40rem;
+  font-size: 2.4rem;
+
+  @include sp {
+    padding: 0;
+  }
+}
+
+.l-about__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5.4rem;
+   
+  @include sp {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+.l-about__content {
+  padding-top: 5.1rem;
+  padding-right: 5rem;
+
+  @include sp {
+    padding-top: 2.4rem;
+    padding-right: 0;
+  }
+}
+
+.l-about__content__title {
+  text-align: left;
+  padding-bottom: 1.6rem;
+  font: var(--font-inter);
+  font-weight: 40rem;
+  font-size: 3.6rem;
+
+  @include sp {
+    padding-bottom: 10px;
+    font-size: 2.4rem;
+  }
+}
+
+.l-about__content__main {
+  font: var(--font-inter);
+  font-size: 1.6rem;
+  font-weight: 40rem;
+
+  @include sp {
+    display: inline;
+  }
+}
+
+.l-about__space {
+
+  @include sp {
+    width: 100%;
+  }
+}
+
+.l-about__img {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+
+  @include sp {
+    text-align: center;
+  }
+}
+
+.l-about__img__item {
+  max-width: 55rem;
+  max-height: 37.5rem;
+  width: 100%;
+
+  @include sp {
+    max-width: 346px;
+    max-height: 236px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .l-about__inner {
+    flex-direction: column-reverse;
+  }
+
+  .l-about__img {
+    margin-top: 20px;
+  }
+}
+
+  
