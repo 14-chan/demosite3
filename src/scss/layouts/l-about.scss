@@ -25,6 +25,11 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 5.4rem;
+
+  @include pcm {
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
    
   @include sp {
     display: flex;
@@ -38,7 +43,7 @@
   padding-right: 5rem;
 
   @include sp {
-    padding-top: 2.4rem;
+    padding-top: 1.4rem;
     padding-right: 0;
   }
 }
@@ -79,30 +84,21 @@
   align-items: center;
   flex: 1;
 
-  @include sp {
+  @include pcm {
+    margin-top: 2.4rem;
+  }
+  
+  @include spl {
+    display: inline;
     text-align: center;
+    margin-top: 2.4rem;
   }
 }
 
 .l-about__img__item {
   max-width: 55rem;
-  max-height: 37.5rem;
   width: 100%;
-
-  @include sp {
-    max-width: 346px;
-    max-height: 236px;
-  }
 }
 
-@media (max-width: 768px) { 
-  .l-about__inner {
-    flex-direction: column-reverse;
-  }
-
-  .l-about__img {
-    margin-top: 20px;
-  }
-}
 
   

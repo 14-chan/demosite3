@@ -137,11 +137,6 @@
   width: 100%;
   display: block;
   margin: 0;
-
-  /* ↑　widthが二つある
-          1280pxの方を削除
-          画面が小さくなった時にはみだすので 
-          containerの幅いっぱい100%にする*/
   
   @include spl {
     padding: 0;
@@ -151,8 +146,6 @@
     padding-top: 0;
   }
 }
-
-/* ↓追記 */
 
 .l-header__img__item {
   display: block;
