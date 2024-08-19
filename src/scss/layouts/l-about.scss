@@ -1,6 +1,6 @@
 @import '../foundations/var.scss';
 
-.l-about {
+.g-home__about {
   margin-top: 5.5rem;
 
   @include sp {
@@ -8,10 +8,9 @@
   }
 }
 
-.l-about__title {
+.c-home__about__ttl {
   text-align: center;
   font: var(--font-outfit);
-  font-weight: 40rem;
   font-size: 2.4rem;
 
   @include sp {
@@ -19,7 +18,7 @@
   }
 }
 
-.l-about__inner {
+.g-about__inner {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -38,7 +37,7 @@
   }
 }
 
-.l-about__content {
+.g-content__about {
   padding-top: 5.1rem;
   padding-right: 5rem;
 
@@ -48,11 +47,10 @@
   }
 }
 
-.l-about__content__title {
+.c-content__about__ttl {
   text-align: left;
   padding-bottom: 1.6rem;
   font: var(--font-inter);
-  font-weight: 40rem;
   font-size: 3.6rem;
 
   @include sp {
@@ -64,7 +62,6 @@
 .l-about__content__main {
   font: var(--font-inter);
   font-size: 1.6rem;
-  font-weight: 40rem;
 
   @include sp {
     display: inline;

@@ -1,0 +1,53 @@
+@import '../../../foundations/var.scss';
+
+.g-hamb-btn__header {
+  width: 4rem;
+  height: 100%;
+}
+
+.c-hamb-btn {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+
+  @include spm {
+    display: none;
+  }
+
+  span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      margin: 1rem 0;
+    }
+
+    &:nth-child(3) {
+      top: 0;
+    }
+  }
+
+  &.active span {
+    &:nth-child(1) {
+      top: 0.5rem;
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      top: -1.8rem;
+      transform: rotate(-45deg);
+    }
+  }
+}

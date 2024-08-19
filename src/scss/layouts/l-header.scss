@@ -1,6 +1,6 @@
 @import '../foundations/var.scss';
 
-.l-header {
+.l-home__header {
   background-color: white;
   position: fixed;
   top: 0;
@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.l-header__inner {
+.g-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,11 +31,10 @@
   }
 }
 
-.l-header__title {
+.g-home__ttl {
   color: black;
   margin-left: 3.7rem;
   font: var(--font-inter);
-  font-weight: 40rem;
   font-size: 2.2rem;
   z-index: 9999;
 
@@ -48,7 +47,7 @@
   }
 }
 
-.l-header__nav {
+.g-nav__header {
   margin-left: auto;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
 
@@ -67,8 +66,9 @@
   }
 }
 
-.l-header__nav__list {
+.g-list__header__nav {
   display: flex;
+  gap: 4.5rem;
 
   @include spl {
     flex-direction: column;
@@ -81,14 +81,9 @@
   }
 }
 
-.l-header__nav__item {
+.g-list__header__item {
   font: var(--font-inter);
-  font-weight: 40rem;
   font-size: 1.4rem;
-
-  &:not(:first-child) {
-    margin-left: 4.5rem;
-  }
 
   &:last-child {
     margin-right: 4.1rem;
@@ -108,7 +103,7 @@
   }
 }
 
-.l-header__nav__link {
+.c-nav__header__link {
   display: block;
   height: 8rem;
   line-height: 8rem;
@@ -123,7 +118,7 @@
   }
 }
 
-.l-header__nav.active {
+.g-nav__header.active {
   @include spl {
     transform: translateX(0);
     visibility: visible;
@@ -132,7 +127,7 @@
   }
 }
 
-.l-header__img {
+.g-home__header__img {
   padding-top: 8rem;
   width: 100%;
   display: block;
@@ -147,7 +142,7 @@
   }
 }
 
-.l-header__img__item {
+.c-item__header__img {
   display: block;
   width: 100%;
   aspect-ratio: 1280/629;

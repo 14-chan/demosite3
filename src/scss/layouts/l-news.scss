@@ -13,7 +13,6 @@
     text-align: center;
     padding-bottom: 5.1rem;
     font: var(--font-outfit);
-    font-weight: 40rem;
     font-size: 2.4rem;
 
     @include sp {
@@ -56,14 +55,12 @@
   
   .l-news__info__data {
     font: var(--font-outfit);
-    font-weight: 40rem;
     font-size: 1.4rem;
   }
   
   .l-news__info__category {
     padding-left: 3.9rem;
     font: var(--font-outfit);
-    font-weight: 40rem;
     font-size: 1.4rem;
     color: 3c3c3c;
 
@@ -74,7 +71,6 @@
   .l-news__content__text {
     padding-left: 5rem;
     font: var(--font-main);
-    font-weight: 40rem;
     font-size: 1.4rem;
 
     @include sp {
