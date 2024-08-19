@@ -21,11 +21,8 @@
 }
 
 .l-works__nav {
-  /* ↓ gridで並べる */
   display: grid;
   width: 100%;
-
-  /* ↓ ３列を1:1:1:1 */
   grid-template-columns: repeat(4, 1fr);
   gap: 2.6rem;
 
@@ -35,14 +32,9 @@
   }
 }
 
-/* ↑いらない */
-
 .l-works__nav__item {
   max-width: 25rem;
 }
-
-/* ↑いらない */
-/* ↓追記 */
 
 .l-works__nav__item__img {
   display: block;
@@ -60,8 +52,6 @@
     left: 0;
   }
 }
-
-/* ↓追記 */
 
 .l-works__nav__item__name {
   text-align: center;
