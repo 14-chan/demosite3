@@ -1,6 +1,6 @@
-@import '../../../foundations/var.scss';
+@import '../../foundations/var.scss';
 
-.c-btn__more__btn {
+.c-more__btn {
     display: block;
     font: var(--font-inter);
     font-weight: 40rem;
@@ -34,8 +34,8 @@
       }
     }
   }
-  
-  .c-btn__more__btn__link {
+
+  .c-more__btn__link {
     display: inline-block;
     position: relative;
     padding-right: 4.6rem;
@@ -75,3 +75,4 @@
       }
     }
   }
+  

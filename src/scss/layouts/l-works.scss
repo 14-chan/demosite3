@@ -1,6 +1,6 @@
 @import '../foundations/var.scss';
 
-.l-works {
+.g-home__works {
   margin-top: 12.3rem;
 
   @include sp {
@@ -8,7 +8,7 @@
   }
 }
 
-.l-works__title {
+.c-home__works__ttl {
   text-align: center;
   padding-bottom: 3.3rem;
   font: var(--font-outfit);
@@ -19,7 +19,7 @@
   }
 }
 
-.l-works__nav {
+.g-works__nav {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
@@ -31,11 +31,11 @@
   }
 }
 
-.l-works__nav__item {
+.c-works__nav__item {
   max-width: 25rem;
 }
 
-.l-works__nav__item__img {
+.c-works__nav__item__img {
   display: block;
   width: 100%;
   aspect-ratio: 250/176;
@@ -52,7 +52,7 @@
   }
 }
 
-.l-works__nav__item__name {
+.c-works__nav__item__name {
   text-align: center;
   padding-top: 1.6rem;
   font: var(--font-outfit);
