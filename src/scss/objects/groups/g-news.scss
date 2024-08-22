@@ -1,0 +1,29 @@
+@import '../../foundations/var.scss';
+
+.g-home__news {
+  margin: 0 auto;
+  margin-top: 10.4rem;
+
+
+  @include sp {
+    margin-top: 7.3rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.g-list__news {
+  flex: 1 1 auto;
+  padding-top: 0.34rem;
+  text-align: center;
+
+  @include sp {
+    padding-top: 0;
+  }
+}
+
+.g-list__news__item {
+  text-align: center;
+}
+
+

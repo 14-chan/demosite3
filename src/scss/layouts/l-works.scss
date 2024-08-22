@@ -1,65 +1,10 @@
 @import '../foundations/var.scss';
 
-.g-home__works {
+.l-home__works {
   margin-top: 12.3rem;
 
   @include sp {
     margin-top: 6.2rem;
-  }
-}
-
-.c-home__works__ttl {
-  text-align: center;
-  padding-bottom: 3.3rem;
-  font: var(--font-outfit);
-  font-size: 2.4rem;
-
-  @include sp {
-    padding-bottom: 3.5rem;
-  }
-}
-
-.g-works__nav {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.6rem;
-
-  @include sp {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.4rem;
-  }
-}
-
-.c-works__nav__item {
-  max-width: 25rem;
-}
-
-.c-works__nav__item__img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 250/176;
-  position: relative;
-
-  img {
-    object-fit: cover;
-    object-position: center center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
-.c-works__nav__item__name {
-  text-align: center;
-  padding-top: 1.6rem;
-  font: var(--font-outfit);
-  font-size: 1.4rem;
-
-  @include sp {
-    padding-top: 1.2rem;
   }
 }
 
