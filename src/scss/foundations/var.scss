@@ -6,7 +6,7 @@ $pcm: 768px;
 $spl: 710px;
 $spm: 710px;
 $sp: 540px;
-$u-news: 1020px;
+$mv-news: 1035px;
 
 @mixin pcl {
     @media screen and (max-width: ($pcl)) {
@@ -33,8 +33,8 @@ $u-news: 1020px;
         @content;
     }
 }
-@mixin u-news {
-    @media screen and (max-width: ($u-news)) {
+@mixin mv-news {
+    @media screen and (max-width: ($mv-news)) {
         @content;
     }
 }

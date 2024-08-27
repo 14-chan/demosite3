@@ -26,4 +26,45 @@
   text-align: center;
 }
 
+.g-news__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.7rem;
+
+  @include mv-news {
+    display: inline;
+    padding-bottom: 2rem;
+  }
+}
+
+.g-list__nav__news {
+  @include mv-news {
+    display: flex;
+    gap: 8rem;
+  }
+
+  @include sp {
+    padding-top: 4rem;
+    gap: 3rem;
+  }
+}
+
+.g-pagenation {
+  display: flex;
+  gap: 2rem;
+  padding-top: 5rem;
+
+  @include mv-news {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  @include sp {
+    padding-bottom: 5rem;
+  }
+}
+
+
+
+
 

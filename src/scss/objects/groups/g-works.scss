@@ -2,7 +2,6 @@
 
 .g-works__nav {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.6rem;
   
@@ -10,8 +9,4 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 2.4rem;
     }
-}
-
-.g-works__nav__item {
-    max-width: 25rem;
 }

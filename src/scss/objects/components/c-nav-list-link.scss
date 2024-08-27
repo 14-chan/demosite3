@@ -68,6 +68,34 @@ works
     }
 }
 
+
+/*=========================
+news
+=========================*/
+.c-list__item__news {
+  font: var(--font-outfit);
+  font-size: 1.4rem;
+  color: #3c3c3c;
+
+  &:first-child {
+    margin-bottom: 3.1rem;
+  }
+  &:nth-child(2) {
+    margin-bottom: 2.4rem;
+  }
+  &:nth-child(3) {
+    margin-bottom: 2.4rem;
+  }
+
+  @include mv-news {
+    margin-bottom: 0;
+    display: block;
+    height: 4rem;
+    line-height: 4rem;
+  }
+}
+
+
 /*=========================
 footer
 =========================*/
