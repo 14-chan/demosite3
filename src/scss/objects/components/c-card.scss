@@ -5,19 +5,21 @@
 news
 =======================*/
 .c-card__news {
-    display: block;
+    display: flex;
     border-bottom: 2px solid #E1E1E1;
     padding-top: 4.76rem;
     padding-bottom: 4.76rem;
   
     @include sp {
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
     }
-  }
-  
 
-  
+    &:last-child {
+      flex-wrap: wrap; 
+    }
+}
+
   .c-card__news__date {
     font: var(--font-outfit);
     font-size: 1.4rem;
@@ -40,6 +42,15 @@ news
 
   
     @include sp {
+      padding-left: 2rem;
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: 464px) {
+      padding-top: 1.6rem;
+    }
+
+    @media screen and (max-width: 444px) {
       padding-left: 0;
       padding-top: 1.6rem;
     }
